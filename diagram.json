@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "author": "Prabhashana sandeepa",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 38.4, "left": -62.36, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -124.5, "left": 81, "attrs": {} },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": 89.4,
+      "left": 142,
+      "rotate": 180,
+      "attrs": {}
+    },
+    { "type": "wokwi-servo", "id": "servo1", "top": 199.6, "left": 153.6, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:3V3", "dht1:VCC", "red", [ "v-57.6", "h153.75" ] ],
+    [ "esp:15", "dht1:SDA", "green", [ "h67.2", "v-192" ] ],
+    [ "esp:GND.2", "dht1:GND", "black", [ "h86.4", "v-48" ] ],
+    [ "esp:34", "ldr1:AO", "green", [ "h-19.05", "v-76.8", "h220.8" ] ],
+    [ "esp:GND.2", "ldr1:GND", "black", [ "h48", "v57.6", "h57.6" ] ],
+    [ "esp:3V3", "ldr1:VCC", "red", [ "v-57.6", "h124.95", "v124.8" ] ],
+    [ "servo1:PWM", "esp:27", "green", [ "h-240", "v-105.4" ] ],
+    [ "servo1:V+", "esp:3V3", "red", [ "h-259.2", "v-191.9" ] ],
+    [ "servo1:GND", "esp:GND.2", "black", [ "h-67.2", "v-182.4" ] ]
+  ],
+  "dependencies": {}
+}
