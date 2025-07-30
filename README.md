@@ -20,14 +20,13 @@ This project is fully simulated using **Wokwi**, making it easy to test and demo
 
 ## 📁 Repository Structure
 
-| File/Folder           | Description                                         |
-| --------------------- | --------------------------------------------------- |
-| `sketch.ino`          | Main ESP32 code to handle sensors, servo, and MQTT  |
-| `wokwi-project.txt`   | Project ID for Wokwi simulation                     |
-| `diagram.json`        | Wokwi circuit diagram (ESP32 + DHT22 + LDR + Servo) |
-| `flows.json`          | Node-RED flow for UI and MQTT topics                |
-| `libraries.txt`       | Required libraries (for Wokwi or Arduino IDE)       |
-| `Code Demo Video.mp4` | Video demonstration of Medibox in action            |
+| File/Folder         | Description                                         |
+| ------------------- | --------------------------------------------------- |
+| `sketch.ino`        | Main ESP32 code to handle sensors, servo, and MQTT  |
+| `wokwi-project.txt` | Project ID for Wokwi simulation                     |
+| `diagram.json`      | Wokwi circuit diagram (ESP32 + DHT22 + LDR + Servo) |
+| `flows.json`        | Node-RED flow for UI and MQTT topics                |
+| `libraries.txt`     | Required libraries (for Wokwi or Arduino IDE)       |
 
 ---
 
@@ -99,7 +98,7 @@ This enables real-time updates for:
 
 ## 📦 Arduino Library Requirements
 
-Install these via Arduino Library Manager or auto-imported in Wokwi:
+Install these via Arduino Library Manager or use Wokwi's auto-import:
 
 * `DHT sensor library for ESPx`
 * `PubSubClient`
@@ -107,14 +106,6 @@ Install these via Arduino Library Manager or auto-imported in Wokwi:
 
 ---
 
-## 📽️ Demo
-
-Watch the `Code Demo Video.mp4` to see the full workflow and results.
-
----
-
 ## 📜 License
 
 Licensed under the MIT License. Feel free to fork, adapt, and build upon it!
-
-
